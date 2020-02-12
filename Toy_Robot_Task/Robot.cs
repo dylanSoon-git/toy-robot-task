@@ -28,6 +28,7 @@ namespace Toy_Robot_Task
             this.PosX = x;
             this.PosY = y;
             this.Direction = direction;
+            this.Placed = true;
         }
 
         /// <summary>
@@ -46,7 +47,7 @@ namespace Toy_Robot_Task
         }
 
         /// <summary>
-        /// Move north 1 if safe
+        /// Move south 1 if safe
         /// </summary>
         public void MoveSouth()
         {
@@ -89,5 +90,24 @@ namespace Toy_Robot_Task
                 Console.WriteLine("Can't move robot further in this direction");
             }
         }
+
+        /// <summary>
+        /// Report the current position of the robot
+        /// </summary>
+        public void ReportPosition()
+        {
+            Console.WriteLine($"Current position of robot is {this.PosX}, {this.PosY}, {this.Direction}");
+        }
+
+        /// <summary>
+        /// Update the direction the robot is facing
+        /// </summary>
+        /// <param name="newDir"></param>
+        public void ChangeDirection(string newDir)
+        {
+            this.Direction = newDir;
+        }
+
+        
     }
 }
