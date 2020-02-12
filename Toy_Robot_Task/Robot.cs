@@ -35,7 +35,7 @@ namespace Toy_Robot_Task
         /// </summary>
         public void MoveNorth()
         {
-            if (PosY == 5)
+            if (PosY != 5)
             {
                 this.PosY++;
             }
@@ -50,7 +50,7 @@ namespace Toy_Robot_Task
         /// </summary>
         public void MoveSouth()
         {
-            if (PosY == 0)
+            if (PosY != 0)
             {
                 this.PosY--;
             }
@@ -65,7 +65,7 @@ namespace Toy_Robot_Task
         /// </summary>
         public void MoveEast()
         {
-            if (PosX == 5)
+            if (PosX != 5)
             {
                 this.PosX++;
             }
@@ -80,7 +80,7 @@ namespace Toy_Robot_Task
         /// </summary>
         public void MoveWest()
         {
-            if (PosX == 0)
+            if (PosX != 0)
             {
                 this.PosX--;
             }

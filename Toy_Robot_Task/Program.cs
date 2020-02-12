@@ -13,11 +13,13 @@ namespace Toy_Robot_Task
         static void Main(string[] args)
         {
             Robot robot = new Robot();
-            var active = true;
 
-            while (active)
+            while (true)
             {
                 //Enter command
+                Console.WriteLine("Welcome to the toy robot task");
+                Console.WriteLine("To begin.. use the command PLACE");
+
                 var entry = Console.ReadLine();
                 var keyWord = entry.Split(' ').First();
 
@@ -132,7 +134,7 @@ namespace Toy_Robot_Task
         }
 
         /// <summary>
-        /// Since grid is 5x5, the positions can't be greater than 4
+        /// Since grid is 5x5, the positions can't be greater than 5
         /// Validates the positions entered
         /// </summary>
         /// <param name="position"></param>
@@ -185,9 +187,9 @@ namespace Toy_Robot_Task
             Enum.TryParse(robotsDir, out Direction currentDirection);
 
             //Get all enum values as an array and get the next direction
-            Direction[] Arr = (Direction[])Enum.GetValues(typeof(Direction));
-            int j = Array.IndexOf(Arr, currentDirection) + 1;
-            return (Arr.Length == j) ? Arr[0] : Arr[j];
+            var directionsArray = (Direction[])Enum.GetValues(typeof(Direction));
+            var nextDir = Array.IndexOf(directionsArray, currentDirection) + 1;
+            return directionsArray.Length == nextDir ? directionsArray[0] : directionsArray[nextDir];
         }
 
         /// <summary>
@@ -203,7 +205,7 @@ namespace Toy_Robot_Task
             //Get all enum values as an array and get the previous direction
             var directionsArray = (Direction[])Enum.GetValues(typeof(Direction));
             var previousDir = Array.IndexOf(directionsArray, currentDirection) - 1;
-            return (directionsArray.Length == previousDir) ? directionsArray[0] : directionsArray[previousDir];
+            return previousDir == -1 ? directionsArray[3] : directionsArray[previousDir];
         }
     }
 }
