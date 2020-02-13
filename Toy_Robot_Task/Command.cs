@@ -14,8 +14,10 @@ namespace Toy_Robot_Task
         /// <param name="robot"></param>
         /// <param name="totalEntry"></param>
         /// <param name="keyWord"></param>
-        public void ReadCommand(Robot robot, string totalEntry, string keyWord)
+        public void ReadCommand(Robot robot, string totalEntry)
         {
+            var keyWord = totalEntry.Split(' ').First();
+
             //Check command keyword PLACE, MOVE etc
             switch (keyWord.ToUpper())
             {

@@ -106,8 +106,6 @@ namespace Toy_Robot_Task
         public void ChangeDirection(string newDir)
         {
             this.Direction = newDir;
-        }
-
-        
+        }   
     }
 }

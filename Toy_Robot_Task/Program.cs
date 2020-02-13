@@ -22,9 +22,9 @@ namespace Toy_Robot_Task
             {
                 //Enter command                
                 var entry = Console.ReadLine();
-                var keyWord = entry.Split(' ').First();
-
-                cmdControl.ReadCommand(robot, entry, keyWord);
+                
+                //Read input and act based on command
+                cmdControl.ReadCommand(robot, entry);
             }
         }
     }

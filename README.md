@@ -1,16 +1,16 @@
 # toy-robot-task
 
 In order to run this Console Application you will need to do the following:
-  1. Clone this repository
-  2. Open the **Toy_Robot_Task.sln** in Visual Studio
-  2. Build the project and then go to **Toy_Robot_Task/bin/Debug**
-  3. Run the **Toy_Robot_Task** application. This will start the program.
+  	1. Clone this repository https://github.com/dylanSoon-git/toy-robot-task.git
+  	2. Open the **Toy_Robot_Task.sln** in Visual Studio
+  	2. Build the project and then go to **Toy_Robot_Task/bin/Debug**
+  	3. Run the **Toy_Robot_Task** application. This will start the program.
   
   
-There are unit tests that available to run. 
-
-To run these unit tests you will need to open the Toy_Robot_Task.sln in Visual Studio.
-In the Test Explorer windown you have the ability to run all created unit tests for this task.
+If you want to run the unit tests created for this project:
+	1. Open the **Toy_Robot_Task.sln** in Visual Studio
+	2. Go to _Test_ -> _Test Explorer_
+	3. In _Test Explorer_ you can see all the tests and run them from there. 
 
 
 Description of task

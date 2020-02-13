@@ -3,3 +3,4 @@ C:\Users\Dylan\Documents\Projects\Toy_Robot_Task\Toy_Robot_Task\bin\Debug\Toy_Ro
 C:\Users\Dylan\Documents\Projects\Toy_Robot_Task\Toy_Robot_Task\bin\Debug\Toy_Robot_Task.pdb
 C:\Users\Dylan\Documents\Projects\Toy_Robot_Task\Toy_Robot_Task\obj\Debug\Toy_Robot_Task.exe
 C:\Users\Dylan\Documents\Projects\Toy_Robot_Task\Toy_Robot_Task\obj\Debug\Toy_Robot_Task.pdb
+C:\Users\Dylan\Documents\Projects\Toy_Robot_Task\Toy_Robot_Task\obj\Debug\Toy_Robot_Task.csprojAssemblyReference.cache
