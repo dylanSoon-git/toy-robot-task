@@ -1,6 +1,6 @@
 # toy-robot-task
 
-#This is a .NET Application using C#.
+**This is a .NET Application using C#.**
 
 In order to run this Console Application you will need to do the following:
 1. Clone this repository https://github.com/dylanSoon-git/toy-robot-task.git
